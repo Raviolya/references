@@ -1,0 +1,21 @@
+.finance__wrapper {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.finance__block-wrapper {
+    margin-bottom: 20px;
+}
+.finance__wrapper h2 {
+    
+}
+.fin__ul {
+padding-left: 20px;
+}
+.fin__title {
+    padding-bottom: 20px;
+    width: 300px;
+    margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+.container-body.moder {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-top: 80px;
+  }
+  .container-body.moder.active {
+    padding-left: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    border-bottom: 1px solid #00000009;
+  }
+  th {
+    background-color: #3fb0ec;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .status-pending {
+    color: #FF8E01;
+  }
+
+  .status-in-progress {
+    color: blue;
+  }
+
+  .status-completed {
+    color: #97BD00;
+  }
+  .notification__button {
+    margin-top: 20px;
+    background-color: #97BD00; /* Зеленый цвет фона */
+    border: none; /* Убрать рамку */
+    color: white; /* Белый текст */
+    padding: 10px 10px; /* Поля */
+    text-align: center; /* Текст по центру */
+    text-decoration: none; /* Убрать подчеркивание */
+    display: inline-block; /* Отображать как строчный блок */
+    font-size: 16px; /* Размер шрифта */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Изменить курсор на указатель */
+    transition: background-color 0.3s; /* Плавно изменить цвет фона при наведении */
+  }
+  .notification__button:hover {
+    background-color: #3e8e41;
+  }

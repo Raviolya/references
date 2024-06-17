@@ -1,0 +1,306 @@
+.form__wrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+.form__block-wrapper {
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.form__input {
+    width: 100%;
+    height: 2.5em;
+    padding: 5px 10px;
+    outline: none;
+    border:  none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.form__input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+.form__button {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form__button:focus,
+.form__button:hover {
+    background-color: rgba(0,113,240,0.7);
+}
+.form__input:focus ~ .form__input-label,
+.form__input:not(:placeholder-shown) ~ .form__input-label {
+    top: -18px;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+.body__title.study {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.form__input-wrapper {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.form__mic-img {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+.loader {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+.loader.active {
+    display: block;
+}
+  
+  .loader__inner {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 
+      0 -10px 0 0 rgba(0,77,64, .6),
+      -7.5px 5px 0 0 rgba(0,121,107, .6),
+      7.5px 5px 0 0 rgba(0,150,136, .6);
+    animation: rotate 3s linear infinite;
+  }
+  .loader__inner:nth-child(2) {
+    box-shadow: 
+      7.5px -5px 0 0 rgba(49,27,146, .6),
+      -7.5px -5px 0 0 rgba(81,45,168, .6),
+      0 10px 0 0 rgba(103,58,183, .6);
+    animation: rotate__other 3s linear infinite;
+  }
+  @keyframes rotate {
+    50% {
+      transform: scale(1.4) rotate(360deg);
+    }
+    100% {
+      transform: scale(1) rotate(720deg);
+    }
+  }
+  
+  @keyframes rotate__other {
+    50% {
+      transform: scale(1.5) rotate(-360deg);
+    }
+    100% {
+      transform: scale(1) rotate(-720deg);
+    }
+  }
+.form__mic-img.active {
+    display: none;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+.form__ref-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.form__input-label {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: 0;
+    color:  #008AD5;
+    display: block;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+  .checkbox-wrapper-4 * {
+    box-sizing: border-box;
+  }
+  .checkbox-wrapper-4 .cbx {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+  .checkbox-wrapper-4 .cbx:not(:last-child) {
+    margin-right: 6px;
+  }
+  .checkbox-wrapper-4 .cbx:hover {
+    background: rgba(0,119,255,0.06);
+  }
+  .checkbox-wrapper-4 .cbx span {
+    float: left;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-4 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    transform: scale(1);
+    border: 1px solid #cccfdb;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 1px rgba(0,16,75,0.05);
+  }
+  .checkbox-wrapper-4 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-4 .cbx span:last-child {
+    padding-left: 8px;
+    line-height: 18px;
+  }
+  .checkbox-wrapper-4 .cbx:hover span:first-child {
+    border-color: #97BD00;
+  }
+  .checkbox-wrapper-4 .inp-cbx {
+    position: absolute;
+    visibility: hidden;
+  }
+  .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
+    background: #97BD00;
+    border-color: #97BD00;
+    animation: wave-4 0.4s ease;
+  }
+  .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-4 .inline-svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+    @media screen and (max-width: 640px) {
+        .checkbox-wrapper-4 .cbx {
+        width: 100%;
+        display: inline-block;
+        }
+    }
+    @-moz-keyframes wave-4 {
+        50% {
+        transform: scale(0.9);
+        }
+    }
+    @-webkit-keyframes wave-4 {
+        50% {
+        transform: scale(0.9);
+        }
+    }
+    @-o-keyframes wave-4 {
+        50% {
+        transform: scale(0.9);
+        }
+    }
+    @keyframes wave-4 {
+        50% {
+        transform: scale(0.9);
+        }
+    }
+.form__radio-label {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form__ul {
+    list-style: none;
+}
+.form__other-wrapper {
+    display: none;
+}
+.form__textarea-input {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    border-radius: 5px;
+    border: 1px solid #00000023;
+    outline: none;
+    padding: 10px;
+}
+.form__other-wrapper.active {
+    display: block;
+}
+.form__military-notification {
+    display: none;
+}
+.form__military-notification.active {
+    display: block;
+    margin: 10px 0px;
+}
+.form__militarybook-check {
+    display: none;
+}
+.form__militarybook-check.active {
+    display: block;
+}
+.military__notif-sub {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form__radio-input {
+    display: inline-block;
+    margin-right: 10px; 
+    position: relative;
+}
+
+.form__radio-input input[type="radio"] {
+    display: none; 
+}
+
+.form__radio-input label {
+    display: inline-block;
+    padding: 8px 12px; 
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    color: #333; 
+}
+
+.form__radio-input input[type="radio"]:checked + label {
+    background-color: #FF8E01; 
+    color: #fff; 
+    border-color: #FF8E01; 
+}
+
+.form__radio-input input[type="radio"]:hover + label {
+    background-color: #e9ecef; 
+}
+.radio__block-beetween {
+
+}
+
